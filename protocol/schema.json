@@ -1,0 +1,9 @@
+{
+    "sender": "string",
+    "recipient": "string",
+    "task_id": "string",
+    "status": "string",
+    "payload": "object",
+    "timestamp": "string"
+  }
+  
