@@ -4,8 +4,14 @@ import json
 from fastmcp import FastMCP, Client
 from contextlib import AsyncExitStack
 
+import sys
+from pathlib import Path
+
+sys.path.insert(0, str(Path(__file__).resolve().parents[2]))
+
+
 # Import the lightweight messaging layer used across agents
-from synapse.protocol.post_office import send_message, read_messages
+from protocol.post_office import send_message, read_messages
 
 # Create the FastMCP server for this agent
 mcp = FastMCP("Contextualist Agent")
