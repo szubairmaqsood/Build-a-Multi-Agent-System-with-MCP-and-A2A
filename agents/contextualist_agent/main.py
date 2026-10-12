@@ -17,8 +17,10 @@ from protocol.post_office import send_message, read_messages
 mcp = FastMCP("Contextualist Agent")
 
 # Upstream MCP services this agent depends on
-WORLD_DATA_URL = "http://0.0.0.0:8001/mcp"
-FINANCE_URL = "http://0.0.0.0:8002/mcp"
+
+WORLD_DATA_URL = "http://127.0.0.1:8001/mcp"
+FINANCE_URL = "http://127.0.0.1:8002/mcp"
+
 
 
 @mcp.tool
